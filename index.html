@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>বিসমিল্লাহ কৃষি অনলাইন শপ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- Google Analytics -->
+<title>বিসমিল্লাহ কৃষি অনলাইন শপ</title>
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC1Q3MONQH"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -14,141 +15,157 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-SC1Q3MONQH');
 </script>
-    * {
-      box-sizing: border-box;
-    }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f8f1;
-      color: #222;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      background: #176b35;
-      color: white;
-      text-align: center;
-      padding: 25px 10px;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e8f5e9;
+  color: #222;
+}
 
-    header h1 {
-      margin: 0 0 10px;
-    }
+header {
+  background: #176b35;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
 
-    header p {
-      margin: 0;
-    }
+header h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 25px auto;
-      padding: 10px;
-    }
+header p {
+  margin: 0;
+  font-size: 16px;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 18px;
-    }
+.container {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 10px;
+}
 
-    .product {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    }
+.container > h2 {
+  text-align: center;
+  color: #176b35;
+  margin-bottom: 25px;
+}
 
-    .product .emoji {
-      font-size: 65px;
-      margin: 10px 0;
-    }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
 
-    .product h2 {
-      color: #176b35;
-      font-size: 22px;
-    }
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
 
-    button {
-      background: #16833b;
-      color: white;
-      border: none;
-      padding: 12px 22px;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+.product .emoji {
+  font-size: 65px;
+  margin: 10px 0;
+}
 
-    button:hover {
-      background: #105d2b;
-    }
+.product h2 {
+  color: #176b35;
+  font-size: 22px;
+}
 
-    footer {
-      background: #176b35;
-      color: white;
-      text-align: center;
-      padding: 18px;
-      margin-top: 30px;
-    }
-  </style>
+.product p {
+  line-height: 1.6;
+}
+
+button {
+  background: #16833b;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #105d2b;
+}
+
+footer {
+  background: #176b35;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>বিসমিল্লাহ কৃষি অনলাইন শপ</h1>
-    <p>বিশুদ্ধ কৃষিপণ্য ও মানসম্মত বীজের বিশ্বস্ত ঠিকানা</p>
-  </header>
+<header>
+  <h1>বিসমিল্লাহ কৃষি অনলাইন শপ</h1>
+  <p>বিশুদ্ধ কৃষিপণ্য ও মানসম্মত বীজের বিশ্বস্ত ঠিকানা</p>
+</header>
 
-  <main class="container">
-    <h2 style="text-align:center;">আমাদের পণ্য</h2>
+<main class="container">
 
-    <div class="products">
+  <h2>আমাদের পণ্য</h2>
 
-      <div class="product">
-        <div class="emoji">🍚</div>
-        <h2>চাল</h2>
-        <p>মানসম্মত চাল সংগ্রহ করুন।</p>
-        <button onclick="order('চাল')">অর্ডার করুন</button>
-      </div>
+  <div class="products">
 
-      <div class="product">
-        <div class="emoji">🌾</div>
-        <h2>ধানের বীজ</h2>
-        <p>ভালো ফলনের জন্য মানসম্মত ধানের বীজ।</p>
-        <button onclick="order('ধানের বীজ')">অর্ডার করুন</button>
-      </div>
-
-      <div class="product">
-        <div class="emoji">🌼</div>
-        <h2>সরিষার বীজ</h2>
-        <p>চাষের জন্য সরিষার বীজ।</p>
-        <button onclick="order('সরিষার বীজ')">অর্ডার করুন</button>
-      </div>
-
-      <div class="product">
-        <div class="emoji">🫙</div>
-        <h2>সরিষার তেল</h2>
-        <p>খাঁটি সরিষার তেলের জন্য যোগাযোগ করুন।</p>
-        <button onclick="order('সরিষার তেল')">অর্ডার করুন</button>
-      </div>
-
+    <div class="product">
+      <div class="emoji">🍚</div>
+      <h2>চাল</h2>
+      <p>মানসম্মত চাল সংগ্রহ করুন।</p>
+      <button onclick="order('চাল')">অর্ডার করুন</button>
     </div>
-  </main>
 
-  <footer>
-    <p>যোগাযোগ: 01913347315</p>
-    <p>© বিসমিল্লাহ কৃষি অনলাইন শপ</p>
-  </footer>
+    <div class="product">
+      <div class="emoji">🌾</div>
+      <h2>ধানের বীজ</h2>
+      <p>ভালো ফলনের জন্য মানসম্মত ধানের বীজ।</p>
+      <button onclick="order('ধানের বীজ')">অর্ডার করুন</button>
+    </div>
 
-  <script>
-    function order(product) {
-      const message = "আসসালামু আলাইকুম, আমি " + product + " অর্ডার করতে চাই।";
-      const url = "https://wa.me/8801913347315?text=" + encodeURIComponent(message);
-      window.open(url, "_blank");
-    }
-  </script>
+    <div class="product">
+      <div class="emoji">🌼</div>
+      <h2>সরিষার বীজ</h2>
+      <p>চাষের জন্য সরিষার বীজ।</p>
+      <button onclick="order('সরিষার বীজ')">অর্ডার করুন</button>
+    </div>
+
+    <div class="product">
+      <div class="emoji">🫙</div>
+      <h2>সরিষার তেল</h2>
+      <p>খাঁটি সরিষার তেলের জন্য যোগাযোগ করুন।</p>
+      <button onclick="order('সরিষার তেল')">অর্ডার করুন</button>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>যোগাযোগ: 01913347315</p>
+  <p>© বিসমিল্লাহ কৃষি অনলাইন শপ</p>
+</footer>
+
+<script>
+function order(product) {
+  const message = "আসসালামু আলাইকুম, আমি " + product + " অর্ডার করতে চাই।";
+  const url = "https://wa.me/8801913347315?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
