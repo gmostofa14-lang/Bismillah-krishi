@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>বিসমিল্লাহ কৃষি অনলাইন শপ</title>
 
-<title>বিসমিল্লাহ কৃষি অনলাইন শপ</title>
-
-<!-- Google Analytics -->
+ <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC1Q3MONQH"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -15,119 +14,141 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-SC1Q3MONQH');
 </script>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f8f0;
-  color: #222;
-}
-header {
-  background: #167b36;
-  color: white;
-  text-align: center;
-  padding: 25px 10px;
-}
-header h1 { margin: 0; }
-.hero {
-  text-align: center;
-  padding: 25px 10px;
-}
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 18px;
-  padding: 15px;
-  max-width: 1000px;
-  margin: auto;
-}
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 8px #ccc;
-}
-.photo {
-  font-size: 65px;
-  padding: 12px;
-}
-button {
-  background: #16833a;
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 7px;
-  font-size: 16px;
-  cursor: pointer;
-}
-footer {
-  background: #167b36;
-  color: white;
-  text-align: center;
-  padding: 18px;
-  margin-top: 25px;
-}
-</style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f8f1;
+      color: #222;
+    }
+
+    header {
+      background: #176b35;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+    }
+
+    header p {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 10px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    .product .emoji {
+      font-size: 65px;
+      margin: 10px 0;
+    }
+
+    .product h2 {
+      color: #176b35;
+      font-size: 22px;
+    }
+
+    button {
+      background: #16833b;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #105d2b;
+    }
+
+    footer {
+      background: #176b35;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>বিসমিল্লাহ কৃষি অনলাইন শপ</h1>
-<p>বিশুদ্ধ কৃষিপণ্য ও মানসম্মত বীজ</p>
-</header>
+  <header>
+    <h1>বিসমিল্লাহ কৃষি অনলাইন শপ</h1>
+    <p>বিশুদ্ধ কৃষিপণ্য ও মানসম্মত বীজের বিশ্বস্ত ঠিকানা</p>
+  </header>
 
-<section class="hero">
-<h2>আমাদের পণ্য</h2>
-<p>পছন্দের পণ্য অর্ডার করতে নিচের বাটনে চাপ দিন।</p>
-</section>
+  <main class="container">
+    <h2 style="text-align:center;">আমাদের পণ্য</h2>
 
-<section class="products">
+    <div class="products">
 
-<div class="card">
-<div class="photo">🍚</div>
-<h3>চাল</h3>
-<p>মানসম্মত চাল</p>
-<button onclick="order('চাল')">অর্ডার করুন</button>
-</div>
+      <div class="product">
+        <div class="emoji">🍚</div>
+        <h2>চাল</h2>
+        <p>মানসম্মত চাল সংগ্রহ করুন।</p>
+        <button onclick="order('চাল')">অর্ডার করুন</button>
+      </div>
 
-<div class="card">
-<div class="photo">🌾</div>
-<h3>ধানের বীজ</h3>
-<p>উন্নত মানের ধানের বীজ</p>
-<button onclick="order('ধানের বীজ')">অর্ডার করুন</button>
-</div>
+      <div class="product">
+        <div class="emoji">🌾</div>
+        <h2>ধানের বীজ</h2>
+        <p>ভালো ফলনের জন্য মানসম্মত ধানের বীজ।</p>
+        <button onclick="order('ধানের বীজ')">অর্ডার করুন</button>
+      </div>
 
-<div class="card">
-<div class="photo">🌱</div>
-<h3>সরিষার বীজ</h3>
-<p>মানসম্মত সরিষার বীজ</p>
-<button onclick="order('সরিষার বীজ')">অর্ডার করুন</button>
-</div>
+      <div class="product">
+        <div class="emoji">🌼</div>
+        <h2>সরিষার বীজ</h2>
+        <p>চাষের জন্য সরিষার বীজ।</p>
+        <button onclick="order('সরিষার বীজ')">অর্ডার করুন</button>
+      </div>
 
-<div class="card">
-<div class="photo">🫙</div>
-<h3>সরিষার তেল</h3>
-<p>খাঁটি সরিষার তেল</p>
-<button onclick="order('সরিষার তেল')">অর্ডার করুন</button>
-</div>
+      <div class="product">
+        <div class="emoji">🫙</div>
+        <h2>সরিষার তেল</h2>
+        <p>খাঁটি সরিষার তেলের জন্য যোগাযোগ করুন।</p>
+        <button onclick="order('সরিষার তেল')">অর্ডার করুন</button>
+      </div>
 
-</section>
+    </div>
+  </main>
 
-<footer>
-<p>যোগাযোগ: 01913347315</p>
-<p>© বিসমিল্লাহ কৃষি অনলাইন শপ</p>
-</footer>
+  <footer>
+    <p>যোগাযোগ: 01913347315</p>
+    <p>© বিসমিল্লাহ কৃষি অনলাইন শপ</p>
+  </footer>
 
-<script>
-function order(product) {
-  const message = "আসসালামু আলাইকুম, আমি " + product + " অর্ডার করতে চাই।";
-  const url = "https://wa.me/8801913347315?text=" + encodeURIComponent(message);
-  window.open(url, "_blank");
-}
-</script>
+  <script>
+    function order(product) {
+      const message = "আসসালামু আলাইকুম, আমি " + product + " অর্ডার করতে চাই।";
+      const url = "https://wa.me/8801913347315?text=" + encodeURIComponent(message);
+      window.open(url, "_blank");
+    }
+  </script>
 
 </body>
 </html>
